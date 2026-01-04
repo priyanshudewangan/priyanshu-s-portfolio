@@ -6,42 +6,35 @@
 
 @layer base {
   :root {
-    --background: 220 20% 97%;
-    --foreground: 220 25% 10%;
+    --background: 30 15% 90%;
+    --foreground: 0 0% 10%;
 
     --card: 0 0% 100%;
-    --card-foreground: 220 25% 10%;
+    --card-foreground: 0 0% 10%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 220 25% 10%;
+    --popover-foreground: 0 0% 10%;
 
-    --primary: 40 70% 50%;
-    --primary-foreground: 220 25% 10%;
+    --primary: 0 0% 10%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 220 15% 92%;
-    --secondary-foreground: 220 25% 10%;
+    --secondary: 30 10% 85%;
+    --secondary-foreground: 0 0% 10%;
 
-    --muted: 220 15% 92%;
-    --muted-foreground: 220 10% 50%;
+    --muted: 30 10% 80%;
+    --muted-foreground: 0 0% 45%;
 
-    --accent: 40 70% 50%;
-    --accent-foreground: 220 25% 10%;
+    --accent: 0 0% 10%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 220 15% 88%;
-    --input: 220 15% 88%;
-    --ring: 40 70% 50%;
+    --border: 0 0% 75%;
+    --input: 0 0% 75%;
+    --ring: 0 0% 10%;
 
     --radius: 0.5rem;
-
-    /* Custom portfolio tokens */
-    --gold: 40 70% 55%;
-    --gold-hover: 40 75% 45%;
-    --navy: 220 30% 12%;
-    --navy-light: 220 25% 18%;
-    --navy-lighter: 220 20% 25%;
   }
 
   .dark {
@@ -54,8 +47,8 @@
     --popover: 220 28% 12%;
     --popover-foreground: 220 15% 95%;
 
-    --primary: 40 70% 55%;
-    --primary-foreground: 220 30% 8%;
+    --primary: 0 0% 100%;
+    --primary-foreground: 0 0% 10%;
 
     --secondary: 220 25% 18%;
     --secondary-foreground: 220 15% 95%;
@@ -63,21 +56,15 @@
     --muted: 220 25% 18%;
     --muted-foreground: 220 15% 60%;
 
-    --accent: 40 70% 55%;
-    --accent-foreground: 220 30% 8%;
+    --accent: 0 0% 100%;
+    --accent-foreground: 0 0% 10%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
 
     --border: 220 25% 20%;
     --input: 220 25% 20%;
-    --ring: 40 70% 55%;
-
-    --gold: 40 70% 55%;
-    --gold-hover: 40 75% 60%;
-    --navy: 220 30% 8%;
-    --navy-light: 220 28% 12%;
-    --navy-lighter: 220 25% 18%;
+    --ring: 0 0% 100%;
   }
 }
 
@@ -98,24 +85,7 @@
 
 @layer utilities {
   .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-amber-400;
-  }
-
-  .border-gradient {
-    border-image: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--gold-hover))) 1;
-  }
-
-  .animate-float {
-    animation: float 6s ease-in-out infinite;
-  }
-
-  @keyframes float {
-    0%, 100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-10px);
-    }
+    @apply bg-clip-text text-transparent;
   }
 
   .section-padding {
