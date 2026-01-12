@@ -2,11 +2,11 @@ import { motion } from "framer-motion";
 import { ArrowDownRight } from "lucide-react";
 import profileImage from "@/assets/profile.jpg";
 
+
 const skills = [
   "FRONTEND DEV",
   "WEB DESIGN", 
   "REACT",
-  "UI/UX",
   "API INTEGRATION",
 ];
 
@@ -56,11 +56,11 @@ const HeroSection = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="flex justify-center"
           >
-            <div className="relative w-72 md:w-80 lg:w-96">
+            <div className="relative w-72 md:w-80 lg:w-96 group">
               <img
                 src={profileImage}
                 alt="Priyanshu Dewangan"
-                className="w-full h-auto grayscale"
+                className="w-full h-auto grayscale group-hover:grayscale-0 transition-all duration-500"
               />
             </div>
           </motion.div>
