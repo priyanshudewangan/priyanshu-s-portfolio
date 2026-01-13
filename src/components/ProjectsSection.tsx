@@ -3,13 +3,16 @@ import { ArrowUpRight, Github, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import netflixImage from "@/assets/project-netflix.jpg";
 import youtubeImage from "@/assets/project-youtube.jpg";
-
+import project3 from "@/assets/project-3.png";
+import project4 from "@/assets/project-4.png";
+import project2 from "@/assets/project-2.png";
+import project1 from "@/assets/project-1.png";
 const projects = [
   {
     title: "Netflix Clone",
     description: "A Netflix-inspired streaming platform UI featuring movie listings powered by external APIs, smooth navigation, and responsive design.",
     tech: ["React", "JavaScript", "APIs", "CSS"],
-    image: netflixImage,
+    image: project1,
     liveUrl: "https://netflixclone23-blond.vercel.app/",
     sourceUrl: "https://github.com/priyanshudewangan/netflixclone23.git",
   },
@@ -17,17 +20,25 @@ const projects = [
     title: "YouTube Clone",
     description: "YouTube-style video platform, search functionality, and modern user interface.",
     tech: ["React", "APIs", "JavaScript", "Tailwind"],
-    image: youtubeImage,
-    liveUrl: "#",
-    sourceUrl: "#",
+    image: project2,
+    liveUrl: "https://ytclone-gray.vercel.app",
+    sourceUrl: "https://github.com/priyanshudewangan/ytclone",
   },
   {
     title: "Movie Recommendation Website",
     description: "An intelligent movie recommendation platform that suggests personalized movies based on user preferences and viewing history. Features user authentication, like/dislike functionality, genre-based filtering, and AI-powered recommendations for a tailored entertainment experience.",
     tech: ["React", "TypeScript", "APIs", "Tailwind CSS", "State Management"],
-    image: netflixImage, // You can add a specific image later
-    liveUrl: "#",
+    image: project3, // You can add a specific image later
+    liveUrl: "https://movie-website-for-recommendation.vercel.app",
     sourceUrl: "#",
+  },
+  {
+    title: "Restaurant Website",
+    description: "A modern and responsive restaurant website showcasing menu items, services, and contact details. Includes interactive UI components, smooth animations, and mobile-first design for an enhanced user experience.",
+    tech: ["React", "TypeScript", "Tailwind CSS", "Responsive Design"],
+    image: project4,
+    liveUrl: "https://restrauntwebsite3.vercel.app",
+    sourceUrl: "https://github.com/priyanshudewangan/restrauntwebsite3",
   },
 ];
 
