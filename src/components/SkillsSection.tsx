@@ -29,27 +29,28 @@ const SkillsSection = () => {
             My <span className="text-primary">Technical</span> Skills
           </h2>
         </motion.div>
-        
+
         <div className="max-w-3xl mx-auto space-y-8">
           {skills.map((skill, index) => (
             <motion.div
               key={skill.name}
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: index * 0.1, ease: "easeOut" }}
+              viewport={{ once: true, margin: "-50px" }}
             >
               <div className="flex justify-between items-center mb-3">
                 <span className="font-semibold text-lg">{skill.name}</span>
                 <span className="text-primary font-medium">{skill.level}%</span>
               </div>
-              <div className="h-3 bg-secondary rounded-full overflow-hidden">
+              <div className="h-3 bg-secondary rounded-full overflow-hidden relative">
+                <div className="absolute inset-0 bg-secondary" /> {/* Background track */}
                 <motion.div
                   initial={{ width: 0 }}
                   whileInView={{ width: `${skill.level}%` }}
-                  transition={{ duration: 1, delay: index * 0.1 + 0.3 }}
+                  transition={{ duration: 1.2, delay: index * 0.1 + 0.2, ease: [0.22, 1, 0.36, 1] }}
                   viewport={{ once: true }}
-                  className="h-full bg-gradient-to-r from-primary to-amber-400 rounded-full"
+                  className="h-full bg-gradient-to-r from-primary to-amber-400 rounded-full relative z-10"
                 />
               </div>
             </motion.div>
